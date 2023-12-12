@@ -1,0 +1,108 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>STO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" type = "text/css" href = "CSS/sto.css">
+<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/skitter.styles.css"> -->
+ <script src ="js/jquery-1.6.3.min.js"></script>
+ <script src ="js/jquery.easing.1.3.js"></script>
+  <script src ="js/jquery.animate-colors-min.js"></script>
+   <script src ="js/jquery.skitter.min.js"></script>
+    <script src ="js/highlight.js"></script>
+    <script>
+      $(document).ready(function(){
+        var options = {};
+        if (document.location.search) {
+          var array = document.location.search.split('=');
+          var param = array[0].replace('?','');
+          var value = array[1];
+          if (param == 'animation'){
+            options.animation = value;
+          }
+          else if (param == 'type_navigaton'){
+            if (value == 'dots_preview'){
+              $('.border_box').CSS({'marginBottom':'40px'});
+              options['dots'] = true;
+              options['preview'] = true;
+            }
+            else {
+              options[value] = true;
+              if (value == 'dots') $ ('.border_box').CSS({'marginBottom': '40px'});
+            }
+          }
+        }
+        $('.box_skitter_large').skitter(options);
+        //Highlight
+        $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+      });
+    </script>
+</head>
+<button onclick="history.back()">Go Back</button>
+<body>
+  <div class = "Container">
+    <div class = "headcon">
+      <div class = "logo">
+        <img src = "img/hurlogo.jpg" alt ="" width = "300" height = "110" /> 
+      </div>
+      <div class ="headright"><br>
+        <small> For more information, please call us:</small></br>
+        <label> 0932 IKAW BAHALA SA PITO </label>
+      </div>
+    </div>
+    <center>
+    <div class="about-section">
+    <h1>OVERVIEW</h1>
+    <p>A super-sports car created with a singular purpose, the Huracán STO delivers all the feel and technology of a genuine race car in a road-legal model.
+Lamborghini’s years-long motorsport know-how, intensified by a winning heritage, is concentrated in the new Huracán STO. Its extreme aerodynamics, track-honed handling dynamics, lightweight contents and the highest-performing V10 engine to date come together, ready to trigger all the emotions of the racetrack in your everyday life.</p>
+  </div>
+  <div class="car">
+    <img src="img/sto.gif" alt ="" width = "750" height = "300">
+  </div>
+  <div class="about-section2">
+    <h1>EXTERIOR</h1>
+    <p>A lightweight approach and functional design combine to express pure performance. While its contours may be reminiscent of the Huracán Super Trofeo EVO, the Huracán STO features a completely revised shape that optimizes the vehicle’s aerodynamics, while employing carbon fiber in more than 75% of the body panels. In particular, the Cofango—a specially designed body component that incorporates the front hood and fenders—maximizes frontal aerodynamic performance while saving weight. 
+The overall effect is an immediate sense of racing excitement.</p>
+  </div>
+  <div class="car">
+    <img src="img/extst.jpg" alt ="" width = "750" height = "300">
+  </div>
+  <div class="about-section3">
+    <h1>INTERIOR</h1>
+    <p>The interior features the same track-minded approach, using lightweight, high-quality materials throughout—most notably carbon fiber. Featured in the door panels, interior details, seats and floor mats, this innovative and distinctive material offers a super-sports look that perfectly complements the car’s fine Alcantara® and Carbon Skin® finishes for added performance flair and functional style. 
+While recalling the Huracán EVO, the interior solutions of the new Huracán STO contribute to an overall weight reduction compared to the previous model. Along with additional features such as a new trim and titanium roll bar with 4-point seatbelts**, the end result elicits the sensation and character of true racing from the moment you get behind the wheel.</p>
+  </div>
+  <div class="car">
+    <img src="img/intst.jpg" alt ="" width = "750" height = "300">
+  </div>
+  <center>
+    <footer class="footer">
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="cars.html">Cars</a></li>
+      <li class="menu__item"><a class="menu__link" href="Services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="careers.html">Careers</a></li>
+      <li class="menu__item"><a class="menu__link" href="AboutUs.html">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="SignUp.html">Sign Up</a></li>
+
+    </ul>
+    <p>&copy;2023 LAMBORGHINI | MR. BUSHIDO</p>
+    <p>FOR SCHOOL PURPOSE PROJECT ONLY</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </html>

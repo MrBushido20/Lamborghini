@@ -1,0 +1,134 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>SERVICES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/services.css">
+<link rel = "stylesheet" type = "text/css" href = "CSS/skitter.styles.css">
+ <script src ="js/jquery-1.6.3.min.js"></script>
+ <script src ="js/jquery.easing.1.3.js"></script>
+  <script src ="js/jquery.animate-colors-min.js"></script>
+   <script src ="js/jquery.skitter.min.js"></script>
+    <script src ="js/highlight.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		var options = {};
+    		if (document.location.search) {
+    			var array = document.location.search.split('=');
+    			var param = array[0].replace('?','');
+    			var value = array[1];
+    			if (param == 'animation'){
+    				options.animation = value;
+    			}
+    			else if (param == 'type_navigaton'){
+    				if (value == 'dots_preview'){
+    					$('.border_box').CSS({'marginBottom':'40px'});
+    					options['dots'] = true;
+    					options['preview'] = true;
+    				}
+    				else {
+    					options[value] = true;
+    					if (value == 'dots') $ ('.border_box').CSS({'marginBottom': '40px'});
+    				}
+    			}
+    		}
+    		$('.box_skitter_large').skitter(options);
+    		//Highlight
+    		$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+    	});
+    </script>
+</head>
+<body>
+	<div class = "Container">
+		<div class = "headcon">
+			<div class = "logo">
+				<img src = "img/logo1.webp" alt ="" width = "300" height = "110" /> 
+			</div>
+			<div class ="headright"><br>
+				<small> For more information, please call us:</small></br>
+				<label> 0932 IKAW BAHALA SA PITO </label>
+			</div>
+		</div>
+		<div class = "navbg">
+			<div class = "nav_inside">
+        <center>
+				<ul>
+				<li><a href ="index.html">HOME</a></li>
+          <li><a href ="cars.html">MODELS</a></li>
+          <li><a href ="Services.html">SERVICES</a></li>
+          <li><a href ="Careers.html">CAREERS</a></li>
+          <li><a href ="AboutUs.html">ABOUT US</a></li>
+          <li><a href ="ContactUs.html">FEEDBACKS</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class ="flashcon">
+		<div class ="box_skitter box_skitter_large" style= "z-index:0;">
+			<ul>
+				<li> <a href="#blindHeight"><img src = "./img/ser1.jpg"	class="random" /></a></li>
+				<li> <a href="#blindHeight"><img src = "./img/ser2.jpg"	class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src = "./img/ser3.jpg"	class="random"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class = "midboxcon">
+		<div class = "midbox1">
+			<img src = "img/sr1.jpg" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox2">
+			<img src = "img/sr2.png" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox3">
+			<img src = "img/sr3.webp" alt ="" width = "334" height = "187" /> 
+		</div>
+</div>
+<div class="about-section"> 
+<h1>CERTIFIED REPAIRS</h1>
+<div class = "as">
+			<img src = "img/as2.webp" alt ="" width = "333" height = "187" /> 
+		</div>
+  <p>You can count on Lamborghini’s After Sales service to deliver excellent quality, reliability and performance in any condition thanks to the qualified support of our official Lamborghini network of Dealers and Service Points.
+Certified technicians guarantee service geared toward maintaining the integrity of your vehicle to ensure impeccable and perfect functionality regardless of age and mileage.
+If your vehicle requires repair or restoration work, only original spare parts will be used and in accordance with the manufacturer’s specifications in order to ensure the highest standards of quality.
+</p>
+  <h1>ORIGINAL SPARE PARTS</h1>
+  <div class = "as">
+			<img src = "img/as1.webp" alt ="" width = "333" height = "187" /> 
+		</div>
+  <p>Our goal has always been to satisfy and exceed the expectations of our customers in terms of quality and service and our spare parts are built and distributed to reflect that goal.Preserving the efficiency of your Lamborghini means preserving the synergy between the elements.The only solution to maintain the superiority and exclusivity of your vehicle intact over time is to use original spare parts. Only components that comply with the specifications of each model can restore the vehicle to its original high comfort and efficiency levels for optimum performance, quality and safety..</p>
+  <p>DRIVE SAFE FELLAS!!.</p>
+</div>
+<footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="cars.html">Cars</a></li>
+      <li class="menu__item"><a class="menu__link" href="Services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="careers.html">Careers</a></li>
+      <li class="menu__item"><a class="menu__link" href="AboutUs.html">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="SignUp.html">Sign Up</a></li>
+
+    </ul>
+    <p>&copy;2023 LAMBORGHINI | MR. BUSHIDO</p>
+    <p>FOR SCHOOL PURPOSE PROJECT ONLY</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</div>
+</footer>
+</body>
+</html>	
